@@ -9,7 +9,7 @@ const app=express();
 const api=require('./api');
 const middlewares = require("./middlewares");
 
-const port=3000||process.env.PORT;
+const port=process.env.PORT||3000;
 
 
 // parse application/x-www-form-urlencoded
