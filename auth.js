@@ -3,6 +3,7 @@ const Strategy=require("passport-local").Strategy;
 const jwt=require("jsonwebtoken");
 const bcrypt=require('bcrypt');
 const User=require('./models/users');
+require("dotenv").config();
 
 const jwtSecret=process.env.JWT_SECRET||'mark it zero'
 const adminPassword=process.env.ADMIN_PASSWORD||'qwerty'
