@@ -19,6 +19,7 @@ app.use(bodyParser.json())
 app.use(middlewares.cors);
 
 app.use(cookieParser())
+app.get("/",(req,res)=>{res.json({"msg":"Hey User,Welcome to E-Commerce API..Please refer README.md to know how to use"})})
 
 app.post('/login', auth.authenticate,auth.login);
 
